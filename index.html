@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="js/script.js" ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <main class="content">
+        <section class="content__encriptador">
+            <img class="logo_img" src="/assert/Logo.svg" alt="logo" />
+            <div class="content__encriptado__input">
+                <textarea id="txtEncryptDecrypt" type="text" class="content__encriptado__input__text" name=""   placeholder="Ingrese el texto aqui" spellcheck="false"></textarea>
+                <div class="content__warning">
+                    <img src="/assert/exclamacion.svg">
+                    <label for="input-texto" class="lab" id="warning">Solo letras minúsculas, sin acento</label>
+                </div>
+                <div class="content__encriptado__input_button">
+                    <button onclick="encriptar()" id="btn_encry" class="button__encriptado">Encriptar</button>
+                    <button onclick="desencriptar()" id="btn_desencry" class="button__encriptado">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="content__response">
+            <div class="content__response__text invisible"  >
+                <textarea type="text"  readonly class="desncriptado__input_text"    spellcheck="false"></textarea>
+                <button onclick="clipboard()" id="btn_copiar" class="btn_copiar">Copiar</button>
+            </div>
+            <div class="content__response__noText">
+                <img class="img-muneco" src="/assert/muneco.svg">
+                <h2>Ning&uacute;n mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desea encriptar o desencriptar.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
