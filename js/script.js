@@ -6,7 +6,6 @@ function encriptar(){
     const texto = textarea.value;
     var area_default = document.querySelector(".content__response__noText");
 
-    console.log(area_default);
     var area_result = document.querySelector(".content__response__text");
     var texto_out = document.querySelector(".desncriptado__input_text");
     if (texto != ""){
